@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Git Favorites</title>
+
+    <link rel="stylesheet" href="/dist/css/tailwindcss.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <script src="/dist/js/main.js" type="module" defer></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container mx-auto">
+            <div class="py-10 flex items-center justify-between">
+                <h1 class="font-bold text-lg">Git Favorites</h1>
+
+                <div class="flex">
+                    <label for="name-user" class="hidden">Usuário do Github</label>
+                    <input class="border py-1 px-2 rounded-bl-lg rounded-tl-lg outline-none" id="name-user"
+                           name="name-user"
+                           placeholder="Usuário do Github"/>
+                    <button id="add-user" class="rounded-br-lg rounded-tr-lg px-3 bg-blue-400">&plus;</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto">
+            <div class="relative shadow-2xl">
+                <table class="w-full text-stone-800 text-left">
+                    <thead>
+                    <tr class="bg-blue-400">
+                        <th class="rounded-tl-lg px-4 py-2">Usuário</th>
+                        <th class="px-4 py-2">Repositories</th>
+                        <th class="px-4 py-2">Followers</th>
+                        <th class="rounded-tr-lg px-4 py-2">Ações</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
